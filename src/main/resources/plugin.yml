@@ -1,0 +1,4 @@
+name: CustomItems
+version: '1.0.0'
+main: bro.maks.customitems.CustomItemsPlugin
+api-version: '1.21'
