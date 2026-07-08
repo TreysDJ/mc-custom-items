@@ -8,17 +8,17 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class CustomItemsPlugin extends JavaPlugin {
-    private NamespacedKey customItemKey;
+    private NamespacedKey customItemsKey;
     private CustomItemsCreate itemsCreate;
     private CustomItemsRegistry itemsRegistry;
     private ItemsUtil itemsUtil;
 
     @Override
     public void onEnable() {
-        this.customItemKey = new NamespacedKey(this, "custom_item_id");
-        this.itemsCreate = new CustomItemsCreate(customItemKey);
+        this.customItemsKey = new NamespacedKey(this, "custom_items_id");
+        this.itemsCreate = new CustomItemsCreate(customItemsKey);
         this.itemsRegistry = new CustomItemsRegistry(this, itemsCreate);
-        this.itemsUtil = new ItemsUtil(customItemKey);
+        this.itemsUtil = new ItemsUtil(customItemsKey);
 
         itemsRegistry.registerAll();
 

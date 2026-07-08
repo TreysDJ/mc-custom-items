@@ -19,7 +19,7 @@ public class CustomItemsCreate {
 
     public ItemStack createItem(CustomItemsId id) {
         return switch (id) {
-            case VAMPIRE_SWORD -> createVampireSword();
+            case BladeOfBlood -> createVampireSword();
         };
     }
 
@@ -35,7 +35,7 @@ public class CustomItemsCreate {
         meta.getPersistentDataContainer().set(
                 customItemKey,
                 PersistentDataType.STRING,
-                CustomItemsId.VAMPIRE_SWORD.getId()
+                CustomItemsId.BladeOfBlood.getId()
         );
 
         item.setItemMeta(meta);

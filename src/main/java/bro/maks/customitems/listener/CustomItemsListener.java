@@ -43,7 +43,7 @@ public class CustomItemsListener implements Listener {
 
         ItemStack item = player.getInventory().getItemInMainHand();
 
-        if (!itemsUtil.isCustom(item, CustomItemsId.VAMPIRE_SWORD)) {
+        if (!itemsUtil.isCustom(item, CustomItemsId.BladeOfBlood)) {
             return;
         }
 

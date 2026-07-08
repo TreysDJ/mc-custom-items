@@ -22,7 +22,7 @@ public class CustomItemsRegistry {
     private void registerRecipe() {
         NamespacedKey key = new NamespacedKey(plugin, "клинок_алого_ордена");
 
-        ShapedRecipe recipe = new ShapedRecipe(key, itemsCreate.createItem(CustomItemsId.VAMPIRE_SWORD));
+        ShapedRecipe recipe = new ShapedRecipe(key, itemsCreate.createItem(CustomItemsId.BladeOfBlood));
 
         recipe.shape(
                 "A B",
